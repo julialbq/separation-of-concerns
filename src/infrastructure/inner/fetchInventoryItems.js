@@ -24,7 +24,11 @@ const mapAllItems = (inventoryBySector) => {
     model: item.model,
     sector: sector,
     fragility: item.fragility,
-    lastMaintenance: `${item.last_maintenance.day}/${item.last_maintenance.month}/${item.last_maintenance.year}`,
+    lastMaintenance: {
+      day: item.last_maintenance.day,
+      month: item.last_maintenance.month + 1,
+      year: item.last_maintenance.year,
+    },
     wear: calculateWear(item.fragility, item.last_maintenance),
   }));
 
@@ -45,5 +49,5 @@ const calculateWear = (fragility, lastMaintenance) => {
 
   const wear = fragilityMultiplier[fragility - 1] * daysSinceLastMaintenance;
 
-  return wear > 1000 ? 1000 : wear;
+  return Math.min(1000, wear);
 };
