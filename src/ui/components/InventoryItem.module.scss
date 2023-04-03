@@ -10,32 +10,32 @@
   border-radius: 8px;
 }
 
-.itemContainer > h2 {
+.itemTitle {
   font-size: 18px;
   text-transform: capitalize;
 }
 
-.itemContainer > p {
+.itemInfo {
   font-size: 14px;
   text-transform: capitalize;
 }
 
-.low {
+.lowWear {
   background-color: var(--low);
 }
 
-.moderate {
+.moderateWear {
   background-color: var(--moderate);
 }
 
-.high {
+.highWear {
   background-color: var(--high);
 }
 
-.veryHigh {
+.veryHighWear {
   background-color: var(--veryHigh);
 }
 
-.none {
+.noneWear {
   background-color: var(--none);
 }
