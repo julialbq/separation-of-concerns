@@ -1,0 +1,41 @@
+.itemContainer {
+  width: 280px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 10px 10px;
+  justify-self: center;
+  border-radius: 8px;
+}
+
+.itemTitle {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.itemInfo {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.lowWear {
+  background-color: var(--low);
+}
+
+.moderateWear {
+  background-color: var(--moderate);
+}
+
+.highWear {
+  background-color: var(--high);
+}
+
+.veryHighWear {
+  background-color: var(--veryHigh);
+}
+
+.noneWear {
+  background-color: var(--none);
+}
